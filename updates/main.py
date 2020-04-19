@@ -18,5 +18,5 @@ def isUpToDate(fileName, url):
 
 def update(url, path):
 	#put __file__ in path to update current file
-	for i in tqdm(range(1)):
+	for i in tqdm(range(1), desc="Downloading Updates..."):
 		urllib.request.urlretrieve(url, path)
