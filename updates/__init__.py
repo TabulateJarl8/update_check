@@ -1,0 +1,1 @@
+from updates.main import isUpToDate, update
