@@ -1,4 +1,4 @@
-Updates is a Python module to implement in distributed programs. The functions as of now are checking for updates and updating a users Python file. It works by comparing the users Python file to the newest version of the file that's stored on a website like [GitHub](https://github.com).
+Update-Check is a Python module to implement in distributed programs. The functions as of now are checking for updates and updating a users Python file. It works by comparing the users Python file to the newest version of the file that's stored on a website like [GitHub](https://github.com).
 
 # Usage
 ## Checking if File is Up to Date
@@ -12,9 +12,9 @@ Heres an example of the ``isUpToDate()`` function:
 
 
 ```python
-import updates
+from update-check import isUpToDate
 
-if updates.isUpToDate(__file__, "https://github.com/username/repo/myProgram.py") == False:
+if isUpToDate(__file__, "https://github.com/username/repo/myProgram.py") == False:
    doSomething()
 ```
 
@@ -35,9 +35,9 @@ Here's an example of the ``update()`` function:
 
 
 ```python
-import updates
+from update-check import update
 
-updates.update("https://github.com/username/repo/myProgram.py", __file__)
+update("https://github.com/username/repo/myProgram.py", __file__)
 ```
 
 
