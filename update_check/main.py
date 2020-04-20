@@ -22,7 +22,7 @@ def isUpToDate(fileName, url):
 		else:
 			return False
 
-def update(url, path):
+def update(path, url):
 	#put __file__ in path to update current file
 	try:
 		urllib.request.urlopen("http://google.com")
