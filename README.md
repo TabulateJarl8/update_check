@@ -28,7 +28,7 @@ This function will return True if the program is up to date with the web version
 To update a file using this module, you will need to use the ``update()`` function.
 ### Syntax:
 ```python
-update(programURL, pathToProgram)
+update(pathToProgram, programURL)
 ```
 
 Here's an example of the ``update()`` function:
@@ -37,7 +37,7 @@ Here's an example of the ``update()`` function:
 ```python
 from update_check import update
 
-update("https://github.com/username/repo/myProgram.py", __file__)
+update(__file__, "https://github.com/username/repo/myProgram.py")
 ```
 
 
