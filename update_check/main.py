@@ -5,29 +5,26 @@ import logging
 from tqdm import tqdm
 
 def isUpToDate(fileName, url):
-	try:
-		urllib.request.urlopen("http://google.com")
-	except:
-		logging.error("Not Connected to the Internet")
+	with open(fileName, "r") as f:
+		file = f.read()
+	hash = hashlib.sha256((file).encode('utf-8')).hexdigest()
+
+	urlcode = requests.get(url).text
+	urlhash = hashlib.sha256((urlcode).encode('utf-8')).hexdigest()
+	
+	if hash == urlhash:
+		return True
 	else:
-		with open(fileName, "r") as f:
-			file = f.read()
-		hash = hashlib.sha256((file).encode('utf-8')).hexdigest()
-	
-		urlcode = requests.get(url).text
-		urlhash = hashlib.sha256((urlcode).encode('utf-8')).hexdigest()
-	
-		if hash == urlhash:
-			return True
-		else:
-			return False
+		return False
 
 def update(path, url):
 	#put __file__ in path to update current file
-	try:
-		urllib.request.urlopen("http://google.com")
-	except:
-		logging.error("Not Connected to the Internet")
+	for i in tqdm(range(1), desc="Downloading Updates..."):
+		urllib.request.urlretrieve(url, path)
+
+def checkForUpdates(path, url):
+	if isUpToDate(path, url) == False:
+		update(path, url)
+		return True
 	else:
-		for i in tqdm(range(1), desc="Downloading Updates..."):
-			urllib.request.urlretrieve(url, path)
+		return False

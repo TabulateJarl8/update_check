@@ -1,1 +1,1 @@
-from update_check.main import isUpToDate, update
+from update_check.main import isUpToDate, update, checkForUpdates
