@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="update_check",
-    version="0.0.6",
+    version="0.0.8",
     author="Tabulate",
     author_email="tabulatejarl8@gmail.com",
     description="Package to update the end-users copy of your file to the latest version",
