@@ -1,3 +1,10 @@
+[![PyPI version](https://badge.fury.io/py/update-check.svg)](https://badge.fury.io/py/update-check)
+[![Downloads](https://pepy.tech/badge/update-check)](https://pepy.tech/project/update-check)
+[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/TabulateJarl8/update_check/graphs/commit-activity)
+[![GitHub issues](https://img.shields.io/github/issues/TabulateJarl8/update_check.svg)](https://GitHub.com/TabulateJarl8/update_check/issues/)
+
+
 Update_Check is a Python module to implement in distributed programs. The functions as of now are checking for updates and updating a users Python file. It works by comparing the users Python file to the newest version of the file that's stored on a website like [GitHub](https://github.com).
 
 # Usage
