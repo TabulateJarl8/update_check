@@ -14,7 +14,7 @@ One feature of this module is checking if the users file is up to date with the 
 ### Syntax:
 pathToProgram(str): path to local file to be compared
 
-programURL(str): URL to raw file on github (https://raw.githubusercontent.com/username/repo/file
+programURL(str): URL to raw file on github (https://raw.githubusercontent.com/username/repo/file)
 ```python
 isUpToDate(pathToProgram, programURL)
 ```
