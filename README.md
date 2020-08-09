@@ -13,6 +13,7 @@ Update_Check is a Python module to implement in distributed programs. The functi
 One feature of this module is checking if the users file is up to date with the latest version. 
 ### Syntax:
 pathToProgram(str): path to local file to be compared
+
 programURL(str): URL to raw file on github (https://raw.githubusercontent.com/username/repo/file
 ```python
 isUpToDate(pathToProgram, programURL)
