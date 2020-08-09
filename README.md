@@ -5,13 +5,15 @@
 [![GitHub issues](https://img.shields.io/github/issues/TabulateJarl8/update_check.svg)](https://GitHub.com/TabulateJarl8/update_check/issues/)
 
 
-Update_Check is a Python module to implement in distributed programs. The functions as of now are checking for updates and updating a users Python file. It works by comparing the users Python file to the newest version of the file that's stored on a website like [GitHub](https://github.com).
+Update_Check is a Python module to implement in distributed programs. The functions as of now are checking for updates and updating a users Python file. It works by comparing the users Python file to the newest raw version of the file that's stored on a website like [GitHub](https://github.com).
 
 # Usage
 ## Checking if File is Up to Date
 ----
 One feature of this module is checking if the users file is up to date with the latest version. 
 ### Syntax:
+pathToProgram(str): path to local file to be compared
+programURL(str): URL to raw file on github (https://raw.githubusercontent.com/username/repo/file
 ```python
 isUpToDate(pathToProgram, programURL)
 ```
@@ -21,7 +23,7 @@ Heres an example of the ``isUpToDate()`` function:
 ```python
 from update_check import isUpToDate
 
-if isUpToDate(__file__, "https://github.com/username/repo/myProgram.py") == False:
+if isUpToDate(__file__, "https:///raw.githubusercontent.com/username/repo/myProgram.py") == False:
    doSomething()
 ```
 
@@ -44,7 +46,7 @@ Here's an example of the ``update()`` function:
 ```python
 from update_check import update
 
-update(__file__, "https://github.com/username/repo/myProgram.py")
+update(__file__, "https://raw.githubusercontent.com/username/repo/myProgram.py")
 ```
 
 
@@ -65,7 +67,7 @@ Here's an example of the ``checkForUpdates()`` function:
 ```python
 from update_check import checkForUpdates
 
-checkForUpdates(__file__, "https://github.com/username/repo/myProgram.py")
+checkForUpdates(__file__, "https://raw.githubusercontent.com/username/repo/myProgram.py")
 ```
 
 
