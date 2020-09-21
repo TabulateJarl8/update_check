@@ -24,7 +24,7 @@ Heres an example of the ``isUpToDate()`` function:
 ```python
 from update_check import isUpToDate
 
-if isUpToDate(__file__, "https:///raw.githubusercontent.com/username/repo/myProgram.py") == False:
+if isUpToDate(__file__, "https://raw.githubusercontent.com/username/repo/myProgram.py") == False:
    doSomething()
 ```
 
