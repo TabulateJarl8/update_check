@@ -1,7 +1,7 @@
 [![PyPI version](https://badge.fury.io/py/update-check.svg)](https://badge.fury.io/py/update-check)
 [![Downloads](https://pepy.tech/badge/update-check)](https://pepy.tech/project/update-check)
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/TabulateJarl8/update_check/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://GitHub.com/TabulateJarl8/update_check/graphs/commit-activity)
 [![GitHub issues](https://img.shields.io/github/issues/TabulateJarl8/update_check.svg)](https://GitHub.com/TabulateJarl8/update_check/issues/)
 
 
